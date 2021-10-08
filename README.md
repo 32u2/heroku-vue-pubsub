@@ -6,7 +6,8 @@ Quick starter with Go, Vue, Heroku and PubSub. Inspired by "decentralized Displa
 
 - Golang
 - Vue
-- Pubsub (Centrifuge)
+- Pubsub
+- gRPC
 - Heroku
 
 # Deployment
@@ -17,7 +18,7 @@ Three ways to deploy:
 2) GitHub - manual deployment
 3) GitHub - automated deployment
 
-# PubSub test
+# Test (PubSub, gRPC)
 
 ```
 cd app
