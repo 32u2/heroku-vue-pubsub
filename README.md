@@ -55,9 +55,18 @@ $ git push heroku main
 $ heroku open
 ```
 
-## Documentation
+## Reading
 
 For more information about using Go on Heroku, see these Dev Center articles:
 
 - [Go on Heroku](https://devcenter.heroku.com/categories/go)
 - [Heroku GitHub Integration](https://devcenter.heroku.com/articles/github-integration)
+
+# Further work
+
+Vue app source is contained in the ```app``` folder and, as per' ```vue.config.js```, the output is compiled into ```static``` folder.
+In production, the app's ```index.html``` is then loaded as a Golang template.
+
+It would also be trivial to pack the content of the ```static``` folder into the executable using [go.rice](https://github.com/GeertJohan/go.rice)
+and thus ending with a single file for deployment.
+
